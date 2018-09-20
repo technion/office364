@@ -1,22 +1,15 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom"; // Aliased to react-dom-lite
+import CssBaseline from "@material-ui/core/CssBaseline";
+import { StatusList } from "./statuslist.tsx"; 
 
-async function setvar() {
-  const response = await fetch("http://localhost:8080/status.json");
-  return await response.json();
-}
-
-// Dirty hack to make this JSON global so we can play with it
 declare var window: any;
 class App extends React.Component<{}, any> {
-  componentDidMount() {
-    console.log("mounted");
-    setvar().then((x) => { window.glsx = x } );
-  }
-
   public render() {
     return (
       <React.Fragment>
+        <CssBaseline />
+        <StatusList />
         Hello world
         <div id="g-recaptcha" />
       </React.Fragment>
