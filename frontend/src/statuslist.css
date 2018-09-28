@@ -1,0 +1,12 @@
+.display-linebreak {
+    white-space: pre-line;
+}
+
+.gaps {
+    margin: 50px;
+}
+.degraded {
+    height: 150px;
+    width: 150px;
+    float: right;
+}

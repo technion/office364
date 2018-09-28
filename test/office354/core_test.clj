@@ -3,5 +3,5 @@
             [office354.core :refer :all]))
 
 (deftest a-test
-  (testing "FIXME, I fail."
-    (is (= 0 1))))
+  (testing "Run API Check"
+    (is (some? (:body (api_statuslookup getconfig @token))))))

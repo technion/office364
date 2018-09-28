@@ -28,15 +28,11 @@ Setup config.edn:
 
 ### Bugs
 
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
+There is no Office 365 sandbox API. Running the test suite requires a valid config file with valid credentials.
 
 ## License
 
-Copyright © 2018 FIXME
+Copyright © 2018 
 
 Distributed under the Eclipse Public License either version 1.0 or (at
 your option) any later version.

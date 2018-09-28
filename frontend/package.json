@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode development",
-    "server": "webpack-dev-server --content-base ./build --mode development",
+    "start": "webpack-dev-server --content-base ./build --mode development",
     "prod": "webpack --mode production",
     "analyse": "ANALYZE=true webpack --mode production",
+    "lint": "tslint src/*.tsx",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
