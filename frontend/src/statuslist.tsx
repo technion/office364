@@ -21,7 +21,15 @@ const Degradation: React.SFC<{status: string}> = (props) => {
       <CardMedia
         className="degraded"
         image="/assets/screamingcat.jpg"
-        title="Contemplative Reptile"
+        title="Screaming cat"
+      />
+    );
+  } else if (props.status === "Service restored") {
+    return (
+      <CardMedia
+        className="degraded"
+        image="/assets/happycat.jpg"
+        title="Happy Cat"
       />
     );
   }
